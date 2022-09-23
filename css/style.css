@@ -94,3 +94,12 @@ nav ul li:hover{
         opacity: 90%;
     }
 }
+.row>.col{
+    border-radius: 6px;
+    background-color: #03717c;
+}
+.col-3{
+    margin-top: 8px;
+    border-radius: 6px;
+    background-color: #7d72e4;
+}
