@@ -71,6 +71,9 @@
 		height: 256px!important;
 		width: 100%!important;
 	}
+	.carousel-caption{
+		font-size: 8px !important;
+	}
 }
 
 @media only screen and (max-width: 320px) {
@@ -79,7 +82,6 @@
 		object-fit: cover!important;
 	}
 	.carousel-caption{
-		font-size: 10px !important;
-
+		font-size: 7px !important;
 	}
 }
