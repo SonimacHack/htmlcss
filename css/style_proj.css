@@ -14,7 +14,7 @@
 	background: #a56cc1; 
 }
 .pri{
-	background: #63b292;
+	background: #9fe292;
 }
 .carol-img{
 	height: 650px; width: 100%; background-size: cover;
@@ -24,7 +24,7 @@
 }
 .accordion-button:not(.collapsed) {
     color: black!important;
-    background-color: #63b292!important;
+    background-color: #9fe292!important;
 	box-shadow: none!important;
 }
 .nav-item:hover{
@@ -35,9 +35,9 @@
 	box-shadow: none!important;
 }
 
-.accordion, .yt-channel{
+.accordion, .yt-channel, .card-style{
 	border-radius: 20px!important;
-	box-shadow: 10px 10px 10px #63b292;
+	box-shadow: 10px 10px 10px #9fe292;
 }
 
 .prof-img{
@@ -46,17 +46,17 @@
 	width: 13rem;
 }
 .img-prop{
+	position: relative;
 	height: 250px !important;
 	width: 200px !important;
-	background-image: cover;
+	
 }
-.main-con{
-	background: #9fe292;
-}
+
 .contain{
 	overflow: hidden;
-	height: 250px !important;
+	height: 200px !important;
 	width: 200px !important;
+	background-image: cover;
 }
 
 @media only screen and (max-width: 768px) {
