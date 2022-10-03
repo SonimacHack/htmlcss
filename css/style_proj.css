@@ -36,7 +36,27 @@
 }
 
 .accordion, .yt-channel{
+	border-radius: 20px!important;
 	box-shadow: 10px 10px 10px #63b292;
+}
+
+.prof-img{
+	box-shadow: 10px 10px #acec92;
+	border-radius: 20px;
+	width: 13rem;
+}
+.img-prop{
+	height: 250px !important;
+	width: 200px !important;
+	background-image: cover;
+}
+.main-con{
+	background: #9fe292;
+}
+.contain{
+	overflow: hidden;
+	height: 250px !important;
+	width: 200px !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -57,5 +77,9 @@
 	.carol-img{
 		height: 200px!important;
 		object-fit: cover!important;
+	}
+	.carousel-caption{
+		font-size: 10px !important;
+
 	}
 }
