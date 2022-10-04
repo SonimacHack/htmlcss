@@ -40,6 +40,7 @@
 	box-shadow: 10px 10px 10px #9fe292;
 }
 
+
 .prof-img{
 	box-shadow: 10px 10px #acec92;
 	border-radius: 20px;
@@ -49,7 +50,6 @@
 	position: relative;
 	height: 250px !important;
 	width: 200px !important;
-	
 }
 
 .contain{
@@ -67,6 +67,20 @@
 	.carousel-caption{
 		font-size: 12px !important;
 	}
+	.img-prop{
+		position: relative;
+		height: 250px !important;
+		width: 200px !important;
+	}
+	.contain{
+		overflow: hidden;
+		height: 200px !important;
+		width: 200px !important;
+		background-image: cover;
+	}
+	.position, .name{
+		font-size: medium !important;
+	}
   }
 
 @media only screen and (max-width: 430px) {
@@ -77,6 +91,20 @@
 	.carousel-caption{
 		font-size: 10px !important;
 	}
+	.img-prop{
+		position: relative;
+		height: 125px !important;
+		width: 100px !important;
+	}
+	.contain{
+		overflow: hidden;
+		height: 100px !important;
+		width: 100px !important;
+		background-image: cover;
+	}
+	.position, .name{
+		font-size: medium !important;
+	}
 }
 
 @media only screen and (max-width: 320px) {
@@ -84,7 +112,20 @@
 		height: 200px!important;
 		object-fit: cover!important;
 	}
-	.carousel-caption{
-		font-size: 7px !important;
+	.img-prop{
+		position: relative;
+		height: 125px !important;
+		width: 100px !important;
 	}
+	
+	.contain{
+		overflow: hidden;
+		height: 100px !important;
+		width: 100px !important;
+		background-image: cover;
+	}
+	.position, .name{
+		font-size: large !important;
+	}
+	
 }
