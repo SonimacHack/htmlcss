@@ -1,5 +1,8 @@
+body{
+	background-color: #f3f3f3 !important;
+}
 .first-color { 
-	background: #cefff1; 
+	background: #cefff1;
 }
 	
 .second-color { 
@@ -30,17 +33,13 @@
 .nav-item:hover{
 	background-color: #63b292;
 }
-
 .accordion-button:focus {
 	box-shadow: none!important;
 }
-
 .accordion, .yt-channel, .card-style{
 	border-radius: 20px!important;
 	box-shadow: 10px 10px 10px #9fe292;
 }
-
-
 .prof-img{
 	box-shadow: 10px 10px #acec92;
 	border-radius: 20px;
@@ -51,17 +50,18 @@
 	height: 250px !important;
 	width: 200px !important;
 }
-
 .contain{
 	overflow: hidden;
 	height: 200px !important;
 	width: 200px !important;
 	background-image: cover;
 }
-
+.municipal-img{
+	height: 200px !important;
+}
 @media only screen and (max-width: 768px) {
 	.carol-img{
-		height: 286px!important;
+		height: 296px!important;
 		object-fit: cover!important;
 	}
 	.carousel-caption{
@@ -87,6 +87,10 @@
 	.yt-channel{
 		height: 256px!important;
 		width: 100%!important;
+	}
+	.carol-img{
+		height: 246px!important;
+		object-fit: cover!important;
 	}
 	.carousel-caption{
 		font-size: 10px !important;
