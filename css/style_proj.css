@@ -84,6 +84,9 @@ body{
   }
 
 @media only screen and (max-width: 430px) {
+	.intro-mess{
+		font-size: 15px !important;
+	}
 	.municipal-img{
 		height: 170px !important;
 	}
@@ -91,10 +94,10 @@ body{
 		font-size: 18px;
 	}
 	.municipal-des{
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.btn-visit{
-		font-size: 12px !important;
+		font-size: 13px !important;
 	}
 	.yt-channel{
 		height: 256px!important;
@@ -124,6 +127,9 @@ body{
 }
 
 @media only screen and (max-width: 320px) {
+	.intro-mess{
+		font-size: 14px !important;
+	}
 	.carol-img{
 		height: 200px!important;
 		object-fit: cover!important;
