@@ -10,17 +10,18 @@ body{
 }
 
 .third-color { 
-	background: #a6acec; 
+	background: #97db93; 
 }
 
 .fourth-color { 
 	background: #a56cc1; 
 }
 .pri{
-	background: #9fe292;
+	background: #8ed492;
 }
 .carol-img{
-	height: 500px; background-size: cover;
+	height: 500px; 
+	background-size: cover;
 }
 .nav-col{
 	background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
@@ -59,7 +60,29 @@ body{
 .municipal-img{
 	height: 200px !important;
 }
+.main-pic, .main-pic1{
+	height: 360px;
+	width: 100%;
+}
+@media only screen and (max-width: 1026px) {
+	.map-size{
+		width: 400px;
+		height: 300px !important;
+	}
+	.main-pic1{
+		height: 240px;
+		width: 100%;
+	}
+}
 @media only screen and (max-width: 768px) {
+	.map-size{
+		width: 400px;
+		height: 300px !important;
+	}
+	.main-pic, .main-pic1{
+		height: 260px;
+		width: 100%;
+	}
 	.carol-img{
 		height: 296px!important;
 		object-fit: cover!important;
@@ -84,6 +107,10 @@ body{
   }
 
 @media only screen and (max-width: 430px) {
+	.main-pic1{
+		height: 240px;
+		width: 100%;
+	}
 	.intro-mess{
 		font-size: 15px !important;
 	}
@@ -127,6 +154,17 @@ body{
 }
 
 @media only screen and (max-width: 320px) {
+	small{
+		font-size: small !important;
+	}
+	.main-pic1{
+		height: 160px;
+		width: 100%;
+	}
+	.map-size{
+		width: 300px;
+		height: 300px !important;
+	}
 	.intro-mess{
 		font-size: 14px !important;
 	}
