@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <script src="./js/index.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <section class="m-4">
+        <input type="number" id="number1"></input>
+        <button onclick="loopF()">click me</button>
+
+
+        <div id="result"></div>
+        <div id="result2"></div>
+    </section>
+    <script>
+        // loopF = () =>{
+	    //     let number = document.getElementById("number1").value;
+        //     while (number<=10) {
+        //         document.getElementById("result").innerHTML += number;
+        //         // document.write(number);
+        //         number++;
+        //     }
+        // }
+        
+        // document.write(concatinate("Jessie", "Caminos"));
+        
+        loopF = () => {
+            let num = document.getElementById("number1").value;
+            loopFunction(num,document.getElementById("result"));
+        }
+
+        // array or list
+        let friends = [
+            // object starts from {}
+            {
+                name:"Jessie",
+                lastname:"Caminos",
+                address:"Taboo",
+                age: 23,
+            },
+            {
+                name:"Mark",
+                lastname:"Fernandez",
+                address:"Iligan",
+                age: 25,
+            },
+            {
+                name:"James",
+                lastname:"Quilo",
+                address:"Palilan",
+                age: 23,
+            },
+        ]
+        while (condition) {
+            
+        }
+        console.log(friends[0]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 loops(object)</title>
+</head>
+<body>
+    <div id="totalStaff"></div>
+    <script>
+        let staff = [
+            {
+                name: "Oliver Queen", 
+                title: "CEO", 
+                gender: "male", 
+                age: 38, 
+                languages: ["english", "spanish"]
+            }, 
+            {
+                name: "Ben Hur", 
+                title: "Security consultant", 
+                gender: "male", 
+                age: 25, 
+                languages: ["latin", "italian"]
+            }, 
+            {
+                name: "Jessica Alba", 
+                title: "Admin Assistant", 
+                gender: "female", 
+                age: 23, 
+                languages: ["english", "spanish"]
+            }, 
+            {
+                name: "Pepper Piper", 
+                title: "Quality Assurance", 
+                gender: "female", 
+                age: 32, 
+                languages: ["english", "spanish"]
+            },
+            {
+                name: "Red Sullivan", 
+                title: "Project Manager", 
+                gender: "male", 
+                age: 27, 
+                languages: ["russian", "english"]
+            },
+            {
+                name:"Juan Dela Cruz", 
+                title: "Manager", 
+                age: 24, 
+                gender: "male", 
+                languages: ["russian", "french"]
+            },
+            {
+                name:"Anna Salvador", 
+                title: "Junior Dev", 
+                age: 21, 
+                gender: "female", 
+                languages: ["english", "french"]
+            },
+            {
+                name:"Mark Bautista", 
+                title: "Senior Fullstack Dev", 
+                age: 28, 
+                gender: "male", 
+                languages: ["russion", "spanish"]
+            },
+            {
+                name:"Micheal Garcia", 
+                title: "CEO", 
+                age: 40, 
+                gender: "male", 
+                languages: ["english", "latin"]
+            }
+        ];
+
+        // Given the data above, determine the 
+        // number of staff with age greater than 
+        // 30 years old.
+        let staffCount = 0;
+        let count = 0;
+        while (count < staff.length) {
+            
+            
+            if(staff[count].age>30){
+                staffCount++;
+            }
+            count++;
+        }
+        console.log("age more than 30 "+staffCount);
+
+
+        // Given the data above, 
+        // determine the number of 
+        // staff that can speak Spanish.
+
+
+        // ALWAYS PAIR THE INITIALIZATION TO LOOP
+        // EX. 
+        //     Pair1
+        //     let count = 0;
+        //     while(count){
+        //          
+        //          Pair2
+        //          let count2 = 0;
+        //          while(count){
+        //              ++;
+        //          }  
+        //      ++;
+        //     }     
+        // 
+        let staffSpanish = 0;
+        let spanishCount = 0;
+        while (spanishCount < staff.length) {
+            
+            let languageCount = 0;
+            while(languageCount < staff[spanishCount].languages.length){
+                
+                if(staff[spanishCount].languages[languageCount] == "spanish"){
+                    staffSpanish++;
+                }
+                languageCount++;
+            }
+            spanishCount++;
+        }
+        console.log("Total speaks spanish "+staffSpanish);
+        // if(staff[1].languages[1] == "spanish"){
+        //     console.log(staff[1].languages.length);
+        // }else{
+        //     console.log("He is not spanish");
+        // }
+        // while (staff[0].languages[languageCount]) {
+        //     console.log(staff[1].languages[languageCount]);
+        //     languageCount++;
+        // }
+    </script>
+</body>
+</html>

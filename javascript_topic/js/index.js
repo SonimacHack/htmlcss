@@ -77,3 +77,9 @@ month = (day) => {
             
     }
 }
+loopFunction = (number,output) =>{
+    while (number<=10) {
+        output.innerHTML += number;
+        number++
+    }
+}
