@@ -60,6 +60,13 @@
                 languages: ["english", "french"]
             },
             {
+                name:"Anna Salvador", 
+                title: "Senior Dev", 
+                age: 18, 
+                gender: "female", 
+                languages: ["english", "mexican"]
+            },
+            {
                 name:"Mark Bautista", 
                 title: "Senior Fullstack Dev", 
                 age: 28, 
@@ -125,15 +132,32 @@
             spanishCount++;
         }
         console.log("Total speaks spanish "+staffSpanish);
-        // if(staff[1].languages[1] == "spanish"){
-        //     console.log(staff[1].languages.length);
-        // }else{
-        //     console.log("He is not spanish");
-        // }
-        // while (staff[0].languages[languageCount]) {
-        //     console.log(staff[1].languages[languageCount]);
-        //     languageCount++;
-        // }
+        
+
+        // function for passing value
+        getName = (property, value) => {
+            let staffNumb = 0;
+            let i = 0;
+            
+            while(i < staff.length){
+                if(property == "age"){
+                    if(staff[i][property] > value){
+                    staffNumb++;
+                    }
+                }else{
+                    if(staff[i][property] == value){
+                    staffNumb++;
+                    }
+                }
+                i++;
+            }
+            return staffNumb;
+        }
+        console.log(getName("age", 30));
+        console.log(staff[1].gender);
+        staff[0]["languages"][2] = "bisaya";
+        console.log(staff[0]["languages"][2]);
+        
     </script>
 </body>
 </html>
