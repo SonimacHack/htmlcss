@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/index.js" type="text/javascript"></script>
+</head>
+<body>
+    <input type="number" id="numb" onkeyup="numberHandler(event)">
+    <div id="output"></div>
+    <hr>
+    <div id="table"></div>
+    <script>
+        acceptNum = (number) => {
+            for (number; number <= number + 7; number++) {
+                if (number % 7 == 0) {
+                    return number;
+                }
+            }
+        }
+        numberHandler = (e) => {
+            document.getElementById("output").innerHTML = acceptNum(e.currentTarget.value);
+        }
+
+        let invoiceItems = [{description: "Mouse", Qty: 3, unitPrice: 200}, 
+            {description: "Keyboard", Qty: 3, unitPrice: 400},
+            {description: "Monitor", Qty: 6, unitPrice: 5400},
+            {description: "CPU Tower Case", Qty: 3, unitPrice: 1200},
+            {description: "Headset", Qty: 3, unitPrice: 500},
+            {description: "UPS", Qty: 1, unitPrice: 4000},];
+        
+        let table = "<div><table>";
+            table += "<tr>";
+            table += "<th>Description</th>";
+            table += "<th>Qty</th>";
+            table += "<th>UnitPrice</th>";
+            table += "<tr>";
+            invoiceItems.forEach((element) => {
+                table += "<tr>";
+                    table += "<td>"+element.description+"</td>";
+                    table += "<td>"+element.Qty+"</td>";
+                    table += "<td>"+element.unitPrice+"</td>";
+                table += "</tr>";
+            });
+            document.getElementById("table").innerHTML += table + "</table></div>"
+
+    </script>
+</body>
+</html>
