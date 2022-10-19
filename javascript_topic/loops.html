@@ -12,18 +12,36 @@
 
     <script>
         let staff = [
-                {name: "Oliver Queen", title: "CEO", gender: "male", age: 38, languages: ["english", "spanish"]}, 
-                {name: "Ben Hur", title: "Security consultant", gender: "male", age: 25, languages: ["latin", "italian"]}, 
-                {name: "Jessica Alba", title: "Admin Assistant", gender: "female", age: 23, languages: ["english", "spanish"]}, 
-                {name: "Pepper Piper", title: "Quality Assurance", gender: "female", age: 32, languages: ["english", "spanish"]},
-                {name: "Red Sullivan", title: "Project Manager", gender: "male", age: 27, languages: ["russian", "english"]},
-                {name:"Juan Dela C",  title: "Manager", age: 24, gender: "male", languages: ["russian", "french"]},
-                {name:"Anna Salvador", title: "Junior Dev", age: 21, gender: "female", languages: ["english", "french"]},
-                {name:"Anna Salvador", title: "Senior Dev", age: 18, gender: "female", languages: ["english", "mexican"]},
-                {name:"Mark Bautista", title: "Senior Fullstack Dev", age: 28, gender: "male", languages: ["russion", "spanish"]},
-                {name:"Micheal Garcia", title: "CEO", age: 40, gender: "male", languages: ["english", "latin"]}
+                {name: "Oliver Queen", title: "CEO", gender: "male", age: 38, language: ["english", "spanish"]}, 
+                {name: "Ben Hur", title: "Security consultant", gender: "male", age: 25, language: ["latin", "italian"]}, 
+                {name: "Jessica Alba", title: "Admin Assistant", gender: "female", age: 23, language: ["english", "spanish"]}, 
+                {name: "Pepper Piper", title: "Quality Assurance", gender: "female", age: 32, language: ["english", "spanish"]},
+                {name: "Red Sullivan", title: "Project Manager", gender: "male", age: 27, language: ["russian", "english"]},
+                {name:"Juan Dela C",  title: "Manager", age: 24, gender: "male", language: ["russian", "french"]},
+                {name:"Anna Salvador", title: "Junior Dev", age: 21, gender: "female", language: ["spanish", "french"]},
+                {name:"Anna Salvador", title: "Senior Dev", age: 18, gender: "female", language: ["english", "mexican"]},
+                {name:"Mark Bautista", title: "Senior Fullstack Dev", age: 28, gender: "male", language: ["russion", "spanish"]},
+                {name:"Micheal Garcia", title: "CEO", age: 40, gender: "male", language: ["english", "latin"]}
             ];
-        
+            staff.push({name:"Michael Jordan", title: "CEO", age: 40, gender: "male", language: ["english", "latin"]});
+            console.log(staff);
+            // staff.forEach((staffs, index) =>{
+            //     if (staffs.language.forEach((language))) {
+                    
+            //     }
+            // });
+
+            let num = 0;
+            staff.forEach((data)=>{
+                console.log(data);
+                data.language.forEach((lang)=>{
+                    if (lang == "spanish") {
+                        num++;
+                    }
+                });
+            });
+            console.log("total people knows spanish: "+num);
+
         // While Loop 
         getName = (property, value) => {
             let staffNumb = 0;
@@ -43,20 +61,17 @@
             }
             return staffNumb;
         }
-        console.log(getName("age", 30));
+        console.log("Age Having 30 age using While Loop: "+getName("age", 30));
 
         // for loop
         let dataCount = 0;
         for(let i=0; i < staff.length; i++){
-            if(staff[i].age > 24){
+            if(staff[i].age > 30){
                 dataCount++;
             }
         }
-        console.log(dataCount);
+        console.log("Age Having 30 age using For Loop: "+dataCount);
 
-        staff.forEach(function(value){
-            console.log(value.name);
-        });
 
         let setOfNumber = [23,34,56,34,5,8,11,43];
         let counter = 0;

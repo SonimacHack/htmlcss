@@ -37,7 +37,7 @@
             table += "<th>Qty</th>";
             table += "<th>UnitPrice</th>";
             table += "<tr>";
-            invoiceItems.forEach((element) => {
+            invoiceItems.forEach(function(element){
                 table += "<tr>";
                     table += "<td>"+element.description+"</td>";
                     table += "<td>"+element.Qty+"</td>";
