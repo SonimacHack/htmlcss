@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <script src="./js/index.js" type="text/javascript"></script>
+</head>
+<body>
+    <h3>Methods</h3>
+    <div id="demo"></div>
+    
+    <script>
+        let names = ['Jessie', 'Mark', 'Clark', 'Jessel', 'Josh'];
+        
+        // Removing Last Element of Array
+        console.log(names.pop());
+        console.log(names); 
+
+        // Adding Element from the last element
+        console.log(names.push('Newbie End'));
+        console.log(names);
+
+        // Removing First element of Array
+        console.log(names.shift());
+        console.log(names);
+
+        // Adding Element fromt the first element
+        console.log(names.unshift('Newbie Start'));
+        console.log(names);
+
+        // Converting Array to String
+        console.log(names.join());
+        // Changing what separates them
+        console.log(names.join(" - "));
+
+        // Converting String to Array
+        let nameStr = "Jessie,Mike,Jean,Jessel,Mae";
+        console.log(nameStr.split(','));
+
+
+        // Limit fixiing how many decimal point to desplay
+        let num = 12.326;
+        console.log(num.toFixed(2));
+
+        // Convertion string to number
+        let int = "23.12";
+        // accepts decimal convertion
+        console.log(parseFloat(int));
+        // accepts only integer
+        console.log(parseInt(int));
+
+
+        
+
+    </script>
+</body>
+</html>

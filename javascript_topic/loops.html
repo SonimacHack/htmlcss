@@ -8,7 +8,7 @@
     <script src="./js/index.js" type="text/javascript"></script>
 </head>
 <body>
-    <h3>Loops </h3>
+    <h3>Loops for each - for loop - while loop</h3>
 
     <script>
         let staff = [
@@ -30,19 +30,8 @@
                     
             //     }
             // });
-
-            let num = 0;
-            staff.forEach((data)=>{
-                console.log(data);
-                data.language.forEach((lang)=>{
-                    if (lang == "spanish") {
-                        num++;
-                    } 
-                });
-            });
-            console.log("total people knows spanish: "+num);
-
-        // While Loop 
+            
+            // While Loop 
         getName = (property, value) => {
             let staffNumb = 0;
             let i = 0;
@@ -62,6 +51,18 @@
             return staffNumb;
         }
         console.log("Age Having 30 age using While Loop: "+getName("age", 30));
+            let num = 0;
+            staff.forEach((data)=>{
+                console.log(data);
+                data.language.forEach((lang)=>{
+                    if (lang == "spanish") {
+                        num++;
+                    } 
+                });
+            });
+            console.log("total people knows spanish: "+num);
+
+       
 
         // for loop
         let dataCount = 0;
@@ -72,7 +73,7 @@
         }
         console.log("Age Having 30 age using For Loop: "+dataCount);
 
-        money = prompt("how much money you want ?");
+    //    money = prompt("how much money you want ?");
         let setOfNumber = [23,34,56,34,5,8,11,43];
         let counter = 0;
         setOfNumber.forEach(function(i, index){
@@ -99,6 +100,17 @@
             console.log(highest);
             console.log(lowest);
             console.log(points);
+
+
+            let paragh = "this is the word sample of the word mind the things where all goods things";
+            let chars = paragh.match(/a/g);
+            let index = 0;
+            chars.forEach(function(words){
+                index = paragh.indexOf(words, index);
+                console.log(index);
+                index += words.length;
+                
+            });
     </script>
 </body>
 </html>
